@@ -27,7 +27,7 @@
 
 ## Elements
 
-< link> = Relationship between current doc and external resource/for linking docs
+< link rel href> = Relationship between current doc and external resource/for linking docs
 < script> = defines client-side JavaScripts
 < base> = specifies base fo all relative URLs in a page
 < h1> to < h6> = Heading
@@ -55,6 +55,7 @@
 
 ## Attributes
 
+rel -> relationship
 src -> source path/link
 alt -> alternative syntax
 width & height
@@ -74,7 +75,6 @@ checked -> automatically checked checkbox
 
 
 ## values
-
 
 submit -> submits form
 password -> shown in dots
