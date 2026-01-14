@@ -5,7 +5,7 @@
 
 < !DOCTYPE html> == HTML version
 < html> == root element
-< head> == information about the page
+< head> == information about the page (MetaData)
 < body> == What will be displayed
 < title> == Page title
 
@@ -27,6 +27,9 @@
 
 ## Elements
 
+< link> = Relationship between current doc and external resource/for linking docs
+< script> = defines client-side JavaScripts
+< base> = specifies base fo all relative URLs in a page
 < h1> to < h6> = Heading
 < p> = Paragraph
 < img> = image
@@ -47,7 +50,8 @@
 < button> = clickable buttons
 < label for> = labeling for elements 
 < textarea name cols rows checked> = for inputting paragraph like text writing
-< select>
+< select> = Drop down option element
+< option> = used with < select> for options
 
 ## Attributes
 
