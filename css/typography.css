@@ -1,0 +1,67 @@
+/* font-famnily
+  font-size */
+
+body{
+  font-family: Helvetica;
+}
+h1{
+  font-family: "Yesteryear", cursive;
+}
+
+/* font-stack, generic family
+  serif, sans-serif, cursive, fantasy, monospace
+ */
+h3{
+  font-family: 'Courier New', Courier, monospace;
+}
+h2{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: right;
+
+}
+
+/* Google fonts */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); */
+
+/* .roboto-h3 {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: italic;
+  font-variation-settings:
+    "wdth" 700;
+} */
+p{
+  text-indent: 45px;
+}
+h4{
+  font-style: oblique;
+  text-align: center;
+}
+
+/* line height
+  letter spacing
+  word-spacing
+  text-transform
+  text-decoration
+*/
+a{
+  font-size: 40px;
+  text-decoration: none;
+  font-style: normal;
+}
+h1{
+  text-transform: capitalize;
+  text-decoration: line-through;
+}
+.p1{
+  line-height: 2.5em;
+  text-decoration: overline;
+}
+.p2{
+  letter-spacing: 10px;
+  text-decoration: underline;
+}
+.p3{
+  word-spacing: 20px;
+}

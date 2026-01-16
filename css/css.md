@@ -19,6 +19,10 @@ selector{
 - Specificity => if any element has specific class or id. it will apply them instead of common attributes.
 - * => selects all elements in the project. it has least specificity.
 - Fixed values stay same on all screens (pixels) and relative values varies for different screen/parent elements (responsiveness) (percentage/em/rem)
+- 1 em/rem = 16px default browser style; Base value;
+- *font-stack* = if font doesn't support, browser applies other.
+- the third font in font-stack is called *generic font*
+- while importing fonts from google fonts. it is set for maximum and minimum font weight. So it won't go outside of them. 
 
 ### Selectors
 
@@ -38,6 +42,10 @@ selector{
 
 color: text color
 text-transform: text manipulation (lowercase, uppercase)
+font-weight
+font-style
+calc => mathematical operations
+text-align => alignment in the block
 
 ### Value
 
@@ -46,3 +54,5 @@ rgba => RGB + alpha (opacity/transparency from 0 to 1)
 HEX values => #RRGGBB {123456789 ABCDEF}
 pixels (px) => fixed values. same on all devices.
 % => responsive values
+em => relative depends on parent
+rem => relative depends on root 
