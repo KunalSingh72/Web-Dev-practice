@@ -1,0 +1,12 @@
+/* Div & span */
+.green{
+  color: brown;
+}
+
+div{
+  color: black;
+  background-color: aquamarine;
+}
+span{
+  text-transform: uppercase;
+}

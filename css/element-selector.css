@@ -1,0 +1,29 @@
+/* Element selector */
+body{
+  color: azure;
+}
+h1{
+  color: red;
+}
+h2 {
+  color: green;
+}
+p {
+  color: grey;
+}
+
+/* Group selector */
+h1, h2{
+  background-color: aqua;
+}
+
+/* Id selector */
+#heading{
+  color: blueviolet;
+  background-color: #000;
+}
+
+/* Class Selector */
+.head{
+  color: orangered;
+}

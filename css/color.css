@@ -1,0 +1,38 @@
+/* Color Properties */
+
+#first {
+  color: aquamarine;
+  background-color: black;
+}
+
+#second {
+  background: yellow;
+}
+
+/* RGB */
+#third {
+  color: rgb(255, 0, 0);
+  background: rgb(0, 0, 255);
+}
+
+#fourth {
+  color: rgb(255, 0, 0);
+  background: rgb(0, 0, 255);
+}
+/* RGBA */
+#fifth {
+  color: rgb(255, 0, 0);
+  background: rgba(0, 0, 256, 0.25);
+}
+
+/* HSL/HEX */
+
+#sixth {
+  color: white;
+  background-color: #223423;
+}
+#seventh{
+  color: rgb(255, 0, 0);
+  background-color: hsl(69, 92%, 69%);
+}
+

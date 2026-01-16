@@ -24,6 +24,7 @@
 ## Keep in mind
 - *name* attribute in *radio* type *input* element should match. so they can act as options.
 - *value* attribute in *radio* type is the value that actually gets submitted. 
+- *Div* element and *Span* elements are used for grouping elements
 
 ## Elements
 
@@ -52,7 +53,8 @@
 < textarea name cols rows checked> = for inputting paragraph like text writing
 < select> = Drop down option element
 < option> = used with < select> for options
-
+< div> = Block level grouping element
+< span> = inline grouping element
 ## Attributes
 
 rel -> relationship

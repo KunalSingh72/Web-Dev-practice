@@ -1,0 +1,22 @@
+/* Font-size, width-height, pixels */
+
+#first{
+  font-size: 30px;
+  width: 200px;
+  height: 100px;
+  background: blueviolet;
+}
+
+/* percentage */
+
+.outer{
+  width: 100px;
+  height:100px;
+  background: tomato;
+}
+
+.inner{
+  width: 50%;
+  height:50%;
+  background: yellowgreen;
+}
