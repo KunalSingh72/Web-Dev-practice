@@ -1,0 +1,88 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* div{
+  min-height: 100vh;
+  height: 600px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: red;
+  font-size: 5rem;
+}
+.big-img{
+  background: url('./building.jpg');
+  background-size: cover;
+  background-size: contain;
+  background-size: cover;
+  
+}
+.small-img{
+  background: url('./museum.jpg');  
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+  background-repeat: space;
+  background-repeat: repeat-y;
+  background-repeat: repeat-x;
+  background-repeat: round; 
+  background-position: center;
+  background-position: left;
+  background-position: 50% 90%;
+  background-attachment: fixed;
+
+} */
+
+/* Gradients */
+
+/* body{
+  display: flex;
+}
+.numbers{
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+}
+.one{
+  background: linear-gradient(red, green);
+}
+.two{
+  background: linear-gradient(to top,red, green);
+}
+.three{
+  background: linear-gradient(red, green, blue);
+}
+.four{
+  background: linear-gradient(75deg,rgba(0,0,0,0.1), #0000FF);
+}
+.five{
+  background: linear-gradient(to right,red, green);
+}
+.six{
+  background: linear-gradient(to top right, red, green);
+} */
+
+/*  */
+div{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 60px;
+  color: snow;
+}
+.banner{
+  background: url(./Background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+.header{
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./Background.jpg')center/cover no-repeat fixed;
+}

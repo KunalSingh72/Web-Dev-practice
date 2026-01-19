@@ -23,6 +23,10 @@ selector{
 - *font-stack* = if font doesn't support, browser applies other.
 - the third font in font-stack is called *generic font*
 - while importing fonts from google fonts. it is set for maximum and minimum font weight. So it won't go outside of them. 
+- *Block level* elements have default margin.
+- *Outline* can be moved away and inside the element using *outline-offset*, but border can't
+- When applying text-align. all inline elements will be centered but block elements will not, only their child text elements will be centered.
+- *Inline Elements* needs to be block element for applying padding and margins  
 
 ### Selectors
 
@@ -46,7 +50,13 @@ font-weight
 font-style
 calc => mathematical operations
 text-align => alignment in the block
-
+padding => distance between border and content inside
+margin => distance between border and content outside
+display => element behaviour
+opacity => opacity between 0 to 1
+visibility => hidden/visible
+min-height => even if the content of the element is not big enough, it keeps the size minimum
+background: lg, url() bg-p/bg-s bg-r bg-a;
 ### Value
 
 rgb => red, blue, green
@@ -56,3 +66,7 @@ pixels (px) => fixed values. same on all devices.
 % => responsive values
 em => relative depends on parent
 rem => relative depends on root 
+block => Always starts a new line and takes full width
+Inline => Does not start new line and only take up as much as content space 
+display: none; => removes the element from html
+background-repeat: round; => only repeat when fully fits
