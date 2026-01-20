@@ -1,0 +1,72 @@
+/* .banner{
+  border: 5px solid red;
+  overflow: hidden;
+}
+img{
+  float: right;
+  margin: 0 50px;
+}
+p{
+  clear: left;
+} */
+
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div{
+  float: left;
+  height: 200px;
+  width: 33.33%;
+}
+.one{
+  background: red;
+}
+.two{
+  background: blue;
+}
+.three{
+  background: green;
+}
+h1{
+  clear: both;
+} */
+
+
+/* Positions */
+div{
+  border: 3px solid black;
+  background: lightblue;
+  margin-top: 40px;
+  position: relative;
+}
+.p1{
+  background: lightgray;
+  /* position: relative;
+  top: 50px;
+  left: 20rem;
+  right: 50%;
+  bottom: 20px; */
+}
+.p2{
+  background: lightgreen;
+  position: relative;
+}
+.special{
+  background: lightcoral;
+  font-size: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+button{
+  margin: 5px;
+  border: 2px solid black;
+  color: snow;
+  background: lightpink;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}

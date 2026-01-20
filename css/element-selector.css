@@ -1,4 +1,4 @@
-/* Element selector */
+/* Element selector
 body{
   color: azure;
 }
@@ -10,20 +10,88 @@ h2 {
 }
 p {
   color: grey;
-}
+} */
 
-/* Group selector */
+/* Group selector
 h1, h2{
   background-color: aqua;
-}
+} */
 
-/* Id selector */
+/* Id selector
 #heading{
   color: blueviolet;
   background-color: #000;
-}
-
-/* Class Selector */
+} */
+/* 
+Class Selector
 .head{
   color: orangered;
+} */
+
+/* Descendant and Child */
+
+/* div h1{
+  color: blueviolet;
+}
+div > h1 {
+  color: tomato;
+}
+.header h1{
+  color: green;
+}
+.header > h1 {
+  color: purple;
+} */
+
+/* first-letter / first-line */
+/* p::first-letter{
+  font-weight: bold;
+  font-size: 2rem;
+}
+p::first-line{
+  font-weight: bold;
+  font-size: 1.1rem;
+} */
+
+/* hover */
+/* button{
+  background: snow;
+  border: 2px solid black;
+}
+button:hover{
+  font-size: larger;
+  background: violet;
+} */
+
+/* Link */
+/* a:link{
+  color: aqua;
+}
+a:visited{
+  color: red;
+}
+a:hover{
+  color: blue;
+}
+a:active{
+  color: aquamarine;
+} */
+
+/* :root 
+  html elements
+  general styles
+  css variable
+*/
+
+:root{
+  background: lightblue;
+}
+h1{
+  font-size: 3rem;
+}
+.absolute{
+  font-size: 24px;
+}
+.responsive{
+  font-size: 24px;
 }

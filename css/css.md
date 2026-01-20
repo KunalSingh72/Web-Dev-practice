@@ -57,6 +57,11 @@ opacity => opacity between 0 to 1
 visibility => hidden/visible
 min-height => even if the content of the element is not big enough, it keeps the size minimum
 background: lg, url() bg-p/bg-s bg-r bg-a;
+clear => used when *float* porperty is used. It specifies where from next element starts after float.
+z-index => doesn't work on static. only absolute and relative
+::before and ::after => requires content="", even if its empty
+
+
 ### Value
 
 rgb => red, blue, green
@@ -70,3 +75,6 @@ block => Always starts a new line and takes full width
 Inline => Does not start new line and only take up as much as content space 
 display: none; => removes the element from html
 background-repeat: round; => only repeat when fully fits
+
+absolute => positions element with respect to the parent element that have *relative*
+fixed => keep the element fixed on the page/borwser's viewport
