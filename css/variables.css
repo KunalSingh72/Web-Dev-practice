@@ -1,0 +1,33 @@
+/* Css Variables AKA custom properties
+  hold a value and reuse it
+  --varname:value 
+  property:var(--varName)
+  scope
+  :root{} == global
+  element == local
+  any property
+*/
+
+:root{
+  --primary-color: #d85f3e;
+  --secondary-color: #3e74d8;
+  --transition-color: #119b15;
+  --main-transition: all 0.4s linear;
+}
+
+.head{
+  color: var(--primary-color);
+}
+.text{
+  color: var(--secondary-color);
+}
+.head-2{
+  color: var(--primary-color);
+}
+.head-2:hover{
+  color: var(--transition-color);
+  transition: var(--main-transition);
+}
+.para{
+  color: var(--secondary-color);
+}

@@ -1,0 +1,113 @@
+/* transform */
+
+div{
+  width: 100px;
+  height: 100px;
+  /* display: inline-block; */
+  background: rgb(31, 185, 236);
+  color: snow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+  /* transition: all 2s; */
+}
+
+.animation{
+  background: #000;
+  /* animation-name: move;
+  animation-duration: 2s;
+  animation-iteration-count: 2; */
+  /* animation: move 5s infinite; */
+  animation: opacity 5s 2;
+  animation-fill-mode: forwards;
+}
+
+@keyframes opacity {
+  0%{
+    opacity: 0;
+  }
+  25%{
+    transform: translateX(200px);
+    opacity: 0.25;
+  }
+  50%{
+    transform: translateX(-100px);
+    opacity: 1;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 0.5;
+  }
+  
+}
+
+/* animation */
+/* @keyframes move {
+  0%{
+    transform: translateX(20px);
+  }
+  50%{
+    transform: translateX(100px);
+    background: violet;
+  }
+  75%{
+    transform: translateX(-100px);
+    background: blue;
+  }
+  100%{
+    transform: translateX(20px);
+    background: #000;
+  }
+} */
+
+/* transition-timing-function */
+/* div:hover{
+  transform: translateX(100px);
+}
+.ease{
+  transition-timing-function: ease;
+}
+.linear{
+  transition-timing-function: linear;
+}
+.ease-in{
+  transition-timing-function: ease-in;
+}
+.ease-out{
+  transition-timing-function: ease-out;
+}
+.ease-in-out{
+  transition-timing-function: ease-in-out;
+} */
+/* translate() / scale() / rotate() / skew() */
+.one{
+  background: rgb(231, 66, 66);
+  /* transform: translateX(50%); */
+  /* transform: scaleX(0.5); */
+  /* transform: rotate(45deg); */
+  /* transform: skewX(120deg); */
+}
+.two{
+  background: rgb(35, 184, 234);
+  /* transform: translateY(50%); */
+  /* transform: scaleY(1.5); */
+  /* transform: rotateZ(67deg); */
+  /* transform: skewY(120deg); */
+}
+.three{
+  background: rgb(29, 237, 29);
+  /* transform: translate(50%, 50px); */
+  /* transform: scale(1.5, 4.5); */
+  /* transform: rotateX(65deg); */
+  /* transform: rotateY(65deg); */
+  /* transform: skew(120deg, 34deg); */
+  /* transition-property: background, border-radius;
+  transition: 4s,1s;
+  transition-delay: 2s; */
+  transition: all 3s 2s;
+} 
+.three:hover{
+  border-radius: 50%;
+  background: darkgreen;
+}

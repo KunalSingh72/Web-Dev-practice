@@ -55,6 +55,20 @@
 < option> = used with < select> for options
 < div> = Block level grouping element
 < span> = inline grouping element
+< abbr> = when hovered, tell the meaning or information or abbreviation
+< code> = code blocks
+< kbd> = keyboard tag (keyboard keys)
+< datalist> = suggestion like select but its an input tag
+< dialog> = pop-up dialog box
+< details> = native dropdown menues. example: Q/A section
+< summary> = put a title on detail tag
+< time> = read time
+< ruby> / < rt> + < rp> = small text upon text
+< progress max value> = progress bar
+< meter min max value low high optimum> = meter bar
+< fieldset> = quick box for grouping elements
+< legend> = used to set title for *< fieldset>*  
+
 ## Attributes
 
 rel -> relationship
@@ -74,6 +88,8 @@ value -> hardcode data placed in input element OR in place of the 'submit' text 
 rows -> rows 
 cols -> columns
 checked -> automatically checked checkbox
+max -> max-value for progress bar
+low -> low / high -> mid / optimum -> high
 
 
 ## values

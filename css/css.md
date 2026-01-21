@@ -60,7 +60,10 @@ background: lg, url() bg-p/bg-s bg-r bg-a;
 clear => used when *float* porperty is used. It specifies where from next element starts after float.
 z-index => doesn't work on static. only absolute and relative
 ::before and ::after => requires content="", even if its empty
-
+transform => translate(), rotate(), scale(), skew()
+transition => change over time
+animation => change over time with points
+aniamtion-fill-mode => forward (saves the values of 100%)
 
 ### Value
 
