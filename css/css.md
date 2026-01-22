@@ -27,6 +27,10 @@ selector{
 - *Outline* can be moved away and inside the element using *outline-offset*, but border can't
 - When applying text-align. all inline elements will be centered but block elements will not, only their child text elements will be centered.
 - *Inline Elements* needs to be block element for applying padding and margins  
+- *align-content* controls the main axis for all elements together and *align-items* controls individual main axis for each row.
+- *flex-shirnk* and *flex-grow* can be used with *min-width* and *max-width* to defines how much they should shrink or grow respectively. And if elements overflow the parent element because of the shrink, we can use *@media* query to apply *flex-wrap*
+- *Justify-self* only works on grid and not on *flex* elements. for justifying *flex* elements, we can use old method of *margin*
+- fixed values doesn't work on grid, as the content in grid element increases it bacomes useless. Use *auto* or *1 fr* as values to make it more flexible
 
 ### Selectors
 
@@ -64,6 +68,20 @@ transform => translate(), rotate(), scale(), skew()
 transition => change over time
 animation => change over time with points
 aniamtion-fill-mode => forward (saves the values of 100%)
+flex => makes a container flexible box layout
+align-items -> arrange divs on cross axis
+justify-content -> arranges divs on main axis
+flex-direction -> defines the main-axis. from L to R / R to L / T to B / B to T. also reverse the roles of *justify-content* and *align-items*
+gap -> gives margin to divs inside a flexible/ gridlayout. better than *margin*
+flex-wrap -> Decides if inner divs moves to the next row or not
+flex-shrink -> decides whether the elements shrink or not. default value "1"
+flex-grow -> decides whether the elements will grow or not. growing will lead them to fill empty spaces in the parent element. value decides how much bigger the element will grow with respect to other element and parent element 
+
+grid-template-columns => no. of columns in grid
+grid-template-rows => no. of rows in grid
+grid-template-area => works with *grid-area* property and defines where would each element will be placed
+grid-area => provides an identifier to each and every grid element
+place-items => can be used for placing the content on start / end / center in a grid
 
 ### Value
 
@@ -81,3 +99,11 @@ background-repeat: round; => only repeat when fully fits
 
 absolute => positions element with respect to the parent element that have *relative*
 fixed => keep the element fixed on the page/borwser's viewport
+
+flex-start / flex-end / center / space-around / space-evenly / space-between => are the values of *justify-content* and *align items*
+
+wrap / nowrap -> used for flex-wrap
+
+grid -> creates a grid in an element.
+
+1fr -> stretch grid elements to the edge of the page / but not vertically, it stretches only to the height of the container
