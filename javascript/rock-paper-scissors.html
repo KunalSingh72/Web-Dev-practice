@@ -12,7 +12,7 @@
       }
 
       .move-icon {
-        height: 50px; 
+        height: 50px;
       }
       .move-btn {
         width: 120px;
@@ -29,7 +29,8 @@
       .score {
         margin-top: 60px;
       }
-      .reset-score-btn {
+      .reset-score-btn,
+      .auto-play-button {
         background: white;
         border: none;
         font-size: 15px;
@@ -40,9 +41,15 @@
   </head>
   <body>
     <h1 class="title">Rock Paper Scissors</h1>
-    <button onclick="playGame('Rock')" class="move-btn"><img class="move-icon" src="images/rock-emoji.png" alt="Rock"></button>
-    <button onclick="playGame('Paper')" class="move-btn"><img class="move-icon" src="images/paper-emoji.png" alt="Paper"></button>
-    <button onclick="playGame('Scissors')" class="move-btn"><img class="move-icon" src="images/scissors-emoji.png" alt="Scissors"></button>
+    <button onclick="playGame('Rock')" class="move-btn">
+      <img class="move-icon" src="images/rock-emoji.png" alt="Rock" />
+    </button>
+    <button onclick="playGame('Paper')" class="move-btn">
+      <img class="move-icon" src="images/paper-emoji.png" alt="Paper" />
+    </button>
+    <button onclick="playGame('Scissors')" class="move-btn">
+      <img class="move-icon" src="images/scissors-emoji.png" alt="Scissors" />
+    </button>
 
     <h2 class="js-result"></h2>
     <p class="js-moves"></p>
@@ -60,6 +67,8 @@
     >
       Reset Score
     </button>
+
+    <button class="auto-play-button" onclick="autoPLay()">Auto Play</button>
   </body>
   <script>
     const score = JSON.parse(localStorage.getItem("score")) || {
@@ -84,6 +93,22 @@
 
       return compMove;
     }
+
+    let isAutoPlaying = false;
+    let intervalId;
+    function autoPLay() {
+      if (!isAutoPlaying) {
+        intervalId = setInterval(function () {
+          const playerMove = pickComputerMove();
+          playGame(playerMove);
+        }, 1000);
+        isAutoPlaying = true;
+      } else {
+        clearInterval(intervalId);
+        isAutoPlaying = true;
+      }
+    }
+
     function playGame(playerMove) {
       const compMove = pickComputerMove();
 
@@ -127,8 +152,7 @@
       updateScoreElement();
 
       document.querySelector(".js-result").innerHTML = `${result}`;
-      document.querySelector(".js-moves").innerHTML =
-        `You
+      document.querySelector(".js-moves").innerHTML = `You
       <img class="move-icon" src="images/${playerMove}-emoji.png" alt="playerMove">
       <img class="move-icon" src="images/${compMove}-emoji.png" alt="computerMove">
       Computer`;
@@ -137,6 +161,5 @@
       document.querySelector(".js-scores").innerHTML =
         `wins: ${score.wins}, losses: ${score.losses}, ties: ${score.ties}`;
     }
-
   </script>
 </html>

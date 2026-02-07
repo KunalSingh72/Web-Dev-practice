@@ -5,6 +5,10 @@
 - giving instructions to a computer => computer follows are instructions.
 - we use camelCase, PascalCase, kebab-case and snake_case.
 - _Auto-boxing_ automatically wraps the value to make it act as object.
+- Hoisting allows functions to call before they are created
+- _Asynchronous Code_ won't wait for a line to finish before going to the next line
+- _Synchronous Code_ will wait for one line to finish before going to the next line
+
 
 ## Syntax
 
@@ -62,6 +66,12 @@ true || value2 => doesn't check value2
 
 - reusable block of codes
 - written once and used again and again by calling
+
+var greet = function() {} = function greet() {}
+
+- functions are values
+- any function sent as parameter to another function is called **Callback Function**
+
 
 ### return
 
@@ -156,6 +166,9 @@ string_value.toUpperCase() => returns the copy of string by uppercasing all the 
 string_value.length => returns length of the string
 string_value.length => returns length of the string
 
+setTimeout(callback, time) => calls the callback function after sepcified time. but do not hold the code, it just set the timer to execute the callback function
+setInterval(callback, time) => calls the callback function after every specified time, also returns an ID which later can be used to terminate interval
+
 ## Event Listeners
 onclick => used for running code in html doc. (inline)
 onkeydown => used for key pressing features in html doc. (inline)
@@ -168,7 +181,7 @@ onmouseleave => stop hovering over
 JSON.stringify(object_name) => convert js object into string (exclude functions)
 JSON.parse(JSON_string) => convert string into js object
 localStorage.setItem(property_string, value_string) => stores data locally
-localStorage.getItem(property_string) =>
+localStorage.getItem(property_string) => gets the stored data
 
 ## DOM
 

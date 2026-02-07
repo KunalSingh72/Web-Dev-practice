@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advance Functions</title>
+  </head>
+  <body></body>
+  <script>
+    function greeting() {
+      console.log("Hello");
+    }
+    greeting();
+
+    const func1 = function () {
+      console.log("Hello");
+    };
+    console.log(func1);
+    console.log(typeof func1);
+    func1();
+
+    const obj1 = {
+      num: 2,
+      fun: function () {
+        console.log("object-function");
+      },
+    };
+    obj1.fun();
+
+    function display(param) {
+      console.log(param);
+    }
+    display(2);
+
+    function run(param) {
+      param();
+    }
+    run(function () {
+      console.log("param");
+    });
+
+    // setTimeout(function () {
+    //   console.log("timeout"); //then this
+    // }, 3000);
+
+    // console.log("next line"); //execute 1st
+
+    // setInterval(function () {
+    //   console.log("interval");
+    // }, 3000);
+
+    // console.log("nex");
+
+
+    [
+      'make dinner',
+      'wash dishes',
+      'watch youtube'
+    ].forEach(function(value, index) {
+      if(value == 'wash dishes') return;
+      console.log(value, index);
+    });
+
+  </script>
+</html>
